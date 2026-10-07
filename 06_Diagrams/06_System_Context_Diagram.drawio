@@ -1,0 +1,125 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="j7jKnxW2aH4DS2W5VtGD">
+    <mxGraphModel dx="2361" dy="1201" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" mermaidData="{&#xa;  &quot;data&quot;: &quot;graph TD\n    %% Center System Boundary\n    subgraph Center [Core System]\n        ELMS[&lt;b&gt;ELMS&lt;/b&gt;&lt;br&gt;Employee Leave Management &amp;&lt;br&gt;Workforce Analytics System]\n    end\n    style ELMS fill:#dae8fc,stroke:#6c8ebf,stroke-width:3px,text-align:center\n\n    %% External Actors\n    Emp((👤&lt;br&gt;Employee))\n    Mgr((👥&lt;br&gt;Manager))\n    HR((⚙️&lt;br&gt;HR / Admin))\n    Mgmt((📊&lt;br&gt;Management))\n\n    style Emp fill:#f5f5f5,stroke:#333,stroke-width:2px\n    style Mgr fill:#f5f5f5,stroke:#333,stroke-width:2px\n    style HR fill:#f5f5f5,stroke:#333,stroke-width:2px\n    style Mgmt fill:#f5f5f5,stroke:#333,stroke-width:2px\n\n    %% Employee Interactions\n    Emp --&gt;|1. Leave Requests&lt;br&gt;2. Login&lt;br&gt;3. Status Requests| ELMS\n    ELMS --&gt;|1. Leave Balance&lt;br&gt;2. Request Status&lt;br&gt;3. Notifications&lt;br&gt;4. Leave History| Emp\n\n    %% Manager Interactions\n    Mgr --&gt;|Approval / Rejection&lt;br&gt;Decisions| ELMS\n    ELMS --&gt;|1. Pending Leave Requests&lt;br&gt;2. Employee Leave Info&lt;br&gt;3. Notifications| Mgr\n\n    %% HR/Admin Interactions\n    HR --&gt;|1. Employee Data&lt;br&gt;2. Leave Policies&lt;br&gt;3. Leave Entitlements| ELMS\n    ELMS --&gt;|1. Leave Records&lt;br&gt;2. Reports&lt;br&gt;3. Employee Leave Info| HR\n\n    %% Management Interactions\n    Mgmt --&gt;|Report / Analytics Requests| ELMS\n    ELMS --&gt;|1. Leave Analytics&lt;br&gt;2. Department Analysis&lt;br&gt;3. Monthly Trends&lt;br&gt;4. Approval/Rejection Stats| Mgmt\n\n    %% Layout Alignment\n    classDef actor fill:#f5f5f5,stroke:#333,stroke-width:2px;\n    class Emp,Mgr,HR,Mgmt actor;\n&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="uAE7DiG1Oj4HhnYgwYwF-1">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Core System" mermaidId="n:Center" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Core System" id="uAE7DiG1Oj4HhnYgwYwF-2">
+          <mxCell parent="uAE7DiG1Oj4HhnYgwYwF-1" style="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="163" width="358" x="677" y="180" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;ELMS&lt;/b&gt;&#xa;Employee Leave Management &amp;&#xa;Workforce Analytics System" mermaidId="n:ELMS" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=3;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="&lt;b&gt;ELMS&lt;/b&gt;&#xa;Employee Leave Management &amp;&#xa;Workforce Analytics System" id="uAE7DiG1Oj4HhnYgwYwF-3">
+          <mxCell parent="uAE7DiG1Oj4HhnYgwYwF-2" style="html=1;whiteSpace=wrap;strokeWidth=3;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="93" width="288" x="35" y="45" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="👤&#xa;Employee" mermaidId="n:Emp" mermaidBaseStyle="ellipse;html=1;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fillColor=#f5f5f5;strokeColor=#333;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="👤&#xa;Employee" id="uAE7DiG1Oj4HhnYgwYwF-4">
+          <mxCell parent="uAE7DiG1Oj4HhnYgwYwF-1" style="ellipse;html=1;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fillColor=#f5f5f5;strokeColor=#333;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="99" width="99" x="270" y="481" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="👥&#xa;Manager" mermaidId="n:Mgr" mermaidBaseStyle="ellipse;html=1;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fillColor=#f5f5f5;strokeColor=#333;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="👥&#xa;Manager" id="uAE7DiG1Oj4HhnYgwYwF-5">
+          <mxCell parent="uAE7DiG1Oj4HhnYgwYwF-1" style="ellipse;html=1;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fillColor=#f5f5f5;strokeColor=#333;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="90" width="90" x="687" y="836" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="⚙️&#xa;HR / Admin" mermaidId="n:HR" mermaidBaseStyle="ellipse;html=1;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fillColor=#f5f5f5;strokeColor=#333;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="⚙️&#xa;HR / Admin" id="uAE7DiG1Oj4HhnYgwYwF-6">
+          <mxCell parent="uAE7DiG1Oj4HhnYgwYwF-1" style="ellipse;html=1;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fillColor=#f5f5f5;strokeColor=#333;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="112" width="112" x="970" y="575" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="📊&#xa;Management" mermaidId="n:Mgmt" mermaidBaseStyle="ellipse;html=1;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fillColor=#f5f5f5;strokeColor=#333;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="📊&#xa;Management" id="uAE7DiG1Oj4HhnYgwYwF-7">
+          <mxCell parent="uAE7DiG1Oj4HhnYgwYwF-1" style="ellipse;html=1;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fillColor=#f5f5f5;strokeColor=#333;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="121" width="121" x="1363" y="470" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="1. Leave Requests&#xa;2. Login&#xa;3. Status Requests" mermaidId="e:Emp-&gt;ELMS#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.6313131313131313;entryX=0;entryY=0.6397849462365591;curved=1;exitX=1;exitY=0.63;entryX=0;entryY=0.64;" mermaidBaseValue="1. Leave Requests&#xa;2. Login&#xa;3. Status Requests" id="uAE7DiG1Oj4HhnYgwYwF-8">
+          <mxCell edge="1" parent="uAE7DiG1Oj4HhnYgwYwF-1" source="uAE7DiG1Oj4HhnYgwYwF-4" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.63;entryX=0;entryY=0.64;rounded=0;" target="uAE7DiG1Oj4HhnYgwYwF-3">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="541" y="479" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="1. Leave Balance&#xa;2. Request Status&#xa;3. Notifications&#xa;4. Leave History" mermaidId="e:ELMS-&gt;Emp#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.3602150537634409;entryX=1;entryY=0.3686868686868687;curved=1;exitX=0;exitY=0.36;entryX=1;entryY=0.37;" mermaidBaseValue="1. Leave Balance&#xa;2. Request Status&#xa;3. Notifications&#xa;4. Leave History" id="uAE7DiG1Oj4HhnYgwYwF-9">
+          <mxCell edge="1" parent="uAE7DiG1Oj4HhnYgwYwF-1" source="uAE7DiG1Oj4HhnYgwYwF-3" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.36;entryX=1;entryY=0.37;rounded=0;" target="uAE7DiG1Oj4HhnYgwYwF-4">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="541" y="327" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Approval / Rejection&#xa;Decisions" mermaidId="e:Mgr-&gt;ELMS#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.6444444444444444;exitY=0;entryX=0.5451388888888888;entryY=1;curved=1;exitX=0.64;exitY=0;entryX=0.55;entryY=1;" mermaidBaseValue="Approval / Rejection&#xa;Decisions" id="uAE7DiG1Oj4HhnYgwYwF-10">
+          <mxCell edge="1" parent="uAE7DiG1Oj4HhnYgwYwF-1" source="uAE7DiG1Oj4HhnYgwYwF-5" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.64;exitY=0;entryX=0.55;entryY=1;rounded=0;" target="uAE7DiG1Oj4HhnYgwYwF-3">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="846" y="402" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="1. Pending Leave Requests&#xa;2. Employee Leave Info&#xa;3. Notifications" mermaidId="e:ELMS-&gt;Mgr#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.4548611111111111;exitY=1;entryX=0.35555555555555557;entryY=0;curved=1;exitX=0.45;exitY=1;entryX=0.36;entryY=0;" mermaidBaseValue="1. Pending Leave Requests&#xa;2. Employee Leave Info&#xa;3. Notifications" id="uAE7DiG1Oj4HhnYgwYwF-11">
+          <mxCell edge="1" parent="uAE7DiG1Oj4HhnYgwYwF-1" source="uAE7DiG1Oj4HhnYgwYwF-3" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.45;exitY=1;entryX=0.36;entryY=0;rounded=0;" target="uAE7DiG1Oj4HhnYgwYwF-5">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="653" y="402" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="1. Employee Data&#xa;2. Leave Policies&#xa;3. Leave Entitlements" mermaidId="e:HR-&gt;ELMS#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.6160714285714286;exitY=0;entryX=0.5451388888888888;entryY=1;curved=1;exitX=0.62;exitY=0;entryX=0.55;entryY=1;" mermaidBaseValue="1. Employee Data&#xa;2. Leave Policies&#xa;3. Leave Entitlements" id="uAE7DiG1Oj4HhnYgwYwF-12">
+          <mxCell edge="1" parent="uAE7DiG1Oj4HhnYgwYwF-1" source="uAE7DiG1Oj4HhnYgwYwF-6" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.62;exitY=0;entryX=0.55;entryY=1;rounded=0;" target="uAE7DiG1Oj4HhnYgwYwF-3">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="1032" y="397" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="1. Leave Records&#xa;2. Reports&#xa;3. Employee Leave Info" mermaidId="e:ELMS-&gt;HR#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.4548611111111111;exitY=1;entryX=0.3839285714285714;entryY=0;curved=1;exitX=0.45;exitY=1;entryX=0.38;entryY=0;" mermaidBaseValue="1. Leave Records&#xa;2. Reports&#xa;3. Employee Leave Info" id="uAE7DiG1Oj4HhnYgwYwF-13">
+          <mxCell edge="1" parent="uAE7DiG1Oj4HhnYgwYwF-1" source="uAE7DiG1Oj4HhnYgwYwF-3" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.45;exitY=1;entryX=0.38;entryY=0;rounded=0;" target="uAE7DiG1Oj4HhnYgwYwF-6">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="845" y="397" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Report / Analytics Requests" mermaidId="e:Mgmt-&gt;ELMS#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.6074380165289256;entryX=1;entryY=0.6397849462365591;curved=1;exitX=0;exitY=0.61;entryX=1;entryY=0.64;" mermaidBaseValue="Report / Analytics Requests" id="uAE7DiG1Oj4HhnYgwYwF-14">
+          <mxCell edge="1" parent="uAE7DiG1Oj4HhnYgwYwF-1" source="uAE7DiG1Oj4HhnYgwYwF-7" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.61;entryX=1;entryY=0.64;rounded=0;" target="uAE7DiG1Oj4HhnYgwYwF-3">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="1182" y="512" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="1. Leave Analytics&#xa;2. Department Analysis&#xa;3. Monthly Trends&#xa;4. Approval/Rejection Stats" mermaidId="e:ELMS-&gt;Mgmt#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.3602150537634409;entryX=0;entryY=0.3925619834710744;curved=1;exitX=1;exitY=0.36;entryX=0;entryY=0.39;" mermaidBaseValue="1. Leave Analytics&#xa;2. Department Analysis&#xa;3. Monthly Trends&#xa;4. Approval/Rejection Stats" id="uAE7DiG1Oj4HhnYgwYwF-15">
+          <mxCell edge="1" parent="uAE7DiG1Oj4HhnYgwYwF-1" source="uAE7DiG1Oj4HhnYgwYwF-3" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.36;entryX=0;entryY=0.39;rounded=0;" target="uAE7DiG1Oj4HhnYgwYwF-7">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="1182" y="290" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
